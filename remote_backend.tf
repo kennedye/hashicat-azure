@@ -1,9 +1,9 @@
 terraform {
   backend "remote" {
     hostname = "app.terraform.io"
-    organization = "CostCo-TFE-Workshop"
+    organization = "kennedye-sandbox"
     workspaces {
-      name = "kennedye-hashicat"
+      name = "hashicat-azure"
     }
   }
 }
