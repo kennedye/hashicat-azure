@@ -66,7 +66,7 @@ resource "azurerm_network_interface" "catapp-nic" {
   network_security_group_id = "${azurerm_network_security_group.catapp-sg.id}"
 
   ip_configuration {
-    name                          = "${var.prefix}ipconfig"
+    name                          = "${var.prefix}-ipconfig"
     subnet_id                     = "${azurerm_subnet.subnet.id}"
     private_ip_address_allocation = "Dynamic"
     public_ip_address_id          = "${azurerm_public_ip.catapp-pip.id}"
